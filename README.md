@@ -49,11 +49,11 @@ A Django-based library management system with APIs for managing users, books, bo
    python -m venv lib
    
 4. **Activate a virtual environment:**
-   - **On Windows:**
+ - **On Windows:**
    ```bash
    lib\scripts\activate
    
-  - **On MacOS/Linux:**
+ - **On MacOS/Linux:**
    ```bash
    source lib/bin/activate
 
