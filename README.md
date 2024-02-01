@@ -52,8 +52,8 @@ A Django-based library management system with APIs for managing users, books, bo
    - **On Windows:**
    ```bash
    lib\scripts\activate
-
-   - **On MacOS/Linux:**
+   
+  - **On MacOS/Linux:**
    ```bash
    source lib/bin/activate
 
@@ -64,6 +64,3 @@ A Django-based library management system with APIs for managing users, books, bo
 6. **Run Migrations**
    ```bash
    python manage.py migrate
-
-
-
