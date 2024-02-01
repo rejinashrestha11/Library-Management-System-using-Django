@@ -36,4 +36,34 @@ A Django-based library management system with APIs for managing users, books, bo
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/library-management-system.git
+   git clone system https://github.com/rejinashrestha11/Library-Management-System-using-Django
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd library-management-system
+   
+3. **Set up a virtual environment:**
+
+   ```bash
+   python -m venv lib
+   
+4. **Activate a virtual environment:**
+   - **On Windows:**
+   ```bash
+   lib\scripts\activate
+
+   - **On MacOS/Linux:**
+   ```bash
+   source lib/bin/activate
+
+5. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   
+6. **Run Migrations**
+   ```bash
+   python manage.py migrate
+
+
+
