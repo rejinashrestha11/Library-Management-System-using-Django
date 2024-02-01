@@ -90,3 +90,7 @@ A Django-based library management system with APIs for managing users, books, bo
   - Borrow a book: `/api/borrowedbooks/` (POST) - Mapped to `path('borrowedbooks/create/', BorrowedBooksCreateView.as_view(), name='borrowedbooks-create')`
   - Return a book: `/api/borrowedbooks/<borrowed_book_id>/` (PUT) - Mapped to `path('borrowedbooks/<int:pk>/', BorrowedBooksDetailView.as_view(), name='borrowedbooks-detail')`
   - List all borrowed books: `/api/borrowedbooks/` (GET) - Mapped to `path('borrowedbooks/', BorrowedBooksListView.as_view(), name='borrowedbooks-list')`
+
+##Testing
+```bash
+python manage.py test
