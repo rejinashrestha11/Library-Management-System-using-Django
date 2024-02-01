@@ -1,7 +1,8 @@
+# library_app/views.py
 from rest_framework import generics
 from django.shortcuts import get_object_or_404
-from .models import User, Book, BorrowedBooks
-from .serializers import UserSerializer, BookSerializer, BorrowedBooksSerializer
+from .models import User, Book, BookDetails, BorrowedBooks
+from .serializers import UserSerializer, BookSerializer, BookDetailsSerializer, BorrowedBooksSerializer
 
 class UserListView(generics.ListAPIView):
     queryset = User.objects.all()
@@ -32,6 +33,17 @@ class BookDetailView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_object(self):
         return get_object_or_404(Book, pk=self.kwargs['pk'])
+
+class BookDetailsCreateView(generics.CreateAPIView):
+    queryset = BookDetails.objects.all()
+    serializer_class = BookDetailsSerializer
+
+class BookDetailsListView(generics.ListAPIView):
+    serializer_class = BookDetailsSerializer
+
+    def get_queryset(self):
+        book_id = self.kwargs.get('book_id')
+        return BookDetails.objects.filter(Book=book_id)
 
 class BorrowedBooksListView(generics.ListAPIView):
     queryset = BorrowedBooks.objects.all()

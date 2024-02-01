@@ -39,6 +39,8 @@ class BookDetailsSerializer(serializers.ModelSerializer):
         model = BookDetails
         fields = '__all__'
 
+
+
 class BorrowedBooksSerializer(serializers.ModelSerializer):
     class Meta:
         model = BorrowedBooks
