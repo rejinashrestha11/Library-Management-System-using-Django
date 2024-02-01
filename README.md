@@ -1,5 +1,3 @@
-![image](https://github.com/rejinashrestha11/Library-Management-System-using-Django/assets/134723621/2b13fd1f-9f20-43bc-8c74-0e36b52023fb)# Django Library Management System
-
 A Django-based library management system with APIs for managing users, books, book details, and borrowed books.
 
 ## Features
@@ -65,12 +63,10 @@ A Django-based library management system with APIs for managing users, books, bo
    ```bash
    python manage.py migrate
 
-## Usage
-
-Run the development server:   
-``bash
-python manage.py runserver
-
+7. **Usage**
+   ```bash
+   python manage.py runserver
+   
 ## API Endpoints
 
 - **User Management:**
