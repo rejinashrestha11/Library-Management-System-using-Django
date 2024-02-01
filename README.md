@@ -1,4 +1,4 @@
-#Library Management System using Django
+# Django Library Management System
 
 A Django-based library management system with APIs for managing users, books, book details, and borrowed books.
 
