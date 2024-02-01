@@ -28,7 +28,7 @@ A Django-based library management system with APIs for managing users, books, bo
 
 - Python 3.6+
 - Django 3.0+
-- MySQL or another database
+- MySQL
 - Other dependencies (see `requirements.txt`)
 
 ## Installation
